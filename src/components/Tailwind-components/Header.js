@@ -24,15 +24,15 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Weekly Analysis', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+  { name: 'Trading Signals', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Risk Management', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Beginners Training', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Weekly Reports', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Youtube Channel', href: '#', icon: PlayCircleIcon },
+  { name: 'Contact Us', href: '#', icon: PhoneIcon },
 ]
 
 export default function Example() {
@@ -43,7 +43,7 @@ export default function Example() {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">MGI Candles</span>
             <img
               alt=""
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
@@ -64,7 +64,7 @@ export default function Example() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-              Product
+              Services
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
 
@@ -107,13 +107,13 @@ export default function Example() {
           </Popover>
 
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Features
+            About Us
           </a>
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Marketplace
+            Membership
           </a>
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Company
+            Contact Us
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
