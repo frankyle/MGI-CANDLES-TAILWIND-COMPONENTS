@@ -1,8 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -34,7 +32,7 @@ export default function Example() {
             Announcing Our next weekly Setups.{' '}
             <a href="#" className="font-semibold text-indigo-600">
               <span aria-hidden="true" className="absolute inset-0" />
-              Join us <span aria-hidden="true">&rarr;</span>
+              Visit<span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>

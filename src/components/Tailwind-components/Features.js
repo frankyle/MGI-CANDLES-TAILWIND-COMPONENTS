@@ -1,45 +1,47 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { CurrencyDollarIcon, ShieldExclamationIcon, AcademicCapIcon, ChartBarIcon } from '@heroicons/react/24/outline';
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Trading Signals',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+      'Get real-time trade alerts to help you make informed decisions. Our trading signals are designed to boost your trading strategies and maximize profits.',
+    icon: CurrencyDollarIcon, 
   },
   {
-    name: 'SSL certificates',
+    name: 'Risk Management',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+    'Get expert advice and guidance on effective risk management strategies. We help you navigate market risks and make informed decisions to protect your investments.',
+     icon: ShieldExclamationIcon, 
   },
   {
-    name: 'Simple queues',
+    name: 'Beginners Training',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+      'Start your Forex journey with our comprehensive beginner training. Learn the fundamentals, key strategies, and how to trade confidently.',
+    icon: AcademicCapIcon,  
   },
   {
-    name: 'Advanced security',
+    name: 'Weekly Reports',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
-  },
+      'Stay ahead of the market with our detailed weekly reports. Get insights, performance analysis, and actionable recommendations to improve your trading.',
+    icon: ChartBarIcon, 
+    },
 ]
+
 
 export default function Features() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+          <h2 className="text-base/7 font-semibold text-indigo-600">Our Services</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
-            Everything you need to deploy your app
+            Everything You Need to Succeed in Forex Trading
           </p>
+
           <p className="mt-6 text-lg/8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Master the markets with expert insights, real-time analysis, and proven strategies. Join a community of traders and elevate your Forex journey today.
           </p>
+
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">

@@ -13,22 +13,22 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
+  ChartBarIcon,
   Bars3Icon,
   ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
+  CurrencyDollarIcon,
+  ShieldExclamationIcon,
+  AcademicCapIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Weekly Analysis', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Trading Signals', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Risk Management', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Beginners Training', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Weekly Reports', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Weekly Analysis', description: 'Analyze market trends with our weekly setups.', href: '#', icon: ChartPieIcon },
+  { name: 'Trading Signals', description: 'Receive signals to maximize your profits.', href: '#', icon: CurrencyDollarIcon },
+  { name: 'Risk Management', description: 'Learn to manage risk effectively.', href: '#', icon: ShieldExclamationIcon },
+  { name: 'Beginners Training', description: 'Master Forex trading with beginner courses.', href: '#', icon: AcademicCapIcon },
+  { name: 'Weekly Reports', description: 'Get weekly reports based on Weekly Setups.', href: '#', icon: ChartBarIcon },
 ]
 const callsToAction = [
   { name: 'Youtube Channel', href: '#', icon: PlayCircleIcon },
