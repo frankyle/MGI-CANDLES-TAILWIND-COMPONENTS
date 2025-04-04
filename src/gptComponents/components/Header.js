@@ -22,13 +22,14 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 const products = [
-  { name: 'Weekly Analysis', description: 'Analyze market trends with our weekly setups.', href: '#', icon: ChartPieIcon },
-  { name: 'Trading Signals', description: 'Receive signals to maximize your profits.', href: '#', icon: CurrencyDollarIcon },
-  { name: 'Risk Management', description: 'Learn to manage risk effectively.', href: '#', icon: ShieldExclamationIcon },
-  { name: 'Beginners Training', description: 'Master Forex trading with beginner courses.', href: '#', icon: AcademicCapIcon },
-  { name: 'Weekly Reports / Trade Tracker', description: 'Get weekly reports based on Weekly Setups.', href: '#', icon: ChartBarIcon },
+  { name: 'Weekly Analysis', description: 'Analyze market trends with our weekly setups.', href: 'weekly-analysis', icon: ChartPieIcon },
+  { name: 'Trading Signals', description: 'Receive signals to maximize your profits.', href: 'trade-signal', icon: CurrencyDollarIcon },
+  { name: 'Risk Management', description: 'Learn to manage risk effectively.', href: 'risk', icon: ShieldExclamationIcon },
+  { name: 'Beginners Training', description: 'Master Forex trading with beginner courses.', href: 'trade-tracker', icon: AcademicCapIcon },
+  { name: 'Weekly Reports', description: 'Get weekly reports / Trade Tracker based on Weekly Setups.', href: 'trade-tracker', icon: ChartBarIcon },
 ]
 const callsToAction = [
   { name: 'Youtube Channel', href: '#', icon: PlayCircleIcon },
@@ -42,14 +43,14 @@ export default function Example() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+         <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">MGI Candles</span>
             <img
               alt=""
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
               className="h-8 w-auto"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -63,12 +64,15 @@ export default function Example() {
         </div>
         
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">
+        <Link to="/" className="text-sm/6 font-semibold text-gray-900">
+            Home
+          </Link>
+          <Link to="/about" className="text-sm/6 font-semibold text-gray-900">
             About Us
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          </Link>
+          <Link to="/blog" className="text-sm/6 font-semibold text-gray-900">
             Blog
-          </a>
+          </Link>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
               Services
@@ -89,10 +93,10 @@ export default function Example() {
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-gray-900">
+                      <Link to={item.href} className="block font-semibold text-gray-900">
                         {item.name}
                         <span className="absolute inset-0" />
-                      </a>
+                      </Link>
                       <p className="mt-1 text-gray-600">{item.description}</p>
                     </div>
                   </div>
@@ -114,26 +118,26 @@ export default function Example() {
           </Popover>
 
           
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Strategy
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link to="/strategy" className="text-sm/6 font-semibold text-gray-900">
+            Our Strategy
+          </Link>
+          <Link to="/membership" className="text-sm/6 font-semibold text-gray-900">
             Membership
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          </Link>
+          <Link to="/gallery" className="text-sm/6 font-semibold text-gray-900">
             Gallery
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          </Link>
+          <Link to="/contact" className="text-sm/6 font-semibold text-gray-900">
             Contact Us
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          </Link>
+          <Link to="/admin" className="text-sm/6 font-semibold text-gray-900">
             Admin Dashboard
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link to="/login" className="text-sm/6 font-semibold text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -160,6 +164,11 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
+              <Link to="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Home
+                </Link>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     Services
@@ -178,32 +187,44 @@ export default function Example() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a
-                  href="#"
+
+                <Link to="/blog"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Blog
+                </Link>
+                <Link to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   About Us
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link to="/strategy"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Our Strategy
+                </Link>
+                <Link to="/membership"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Membership
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link to="/gallery"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Gallery
+                </Link>
+                <Link to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
+                <Link to="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Log in
-                </a>
+                </Link>
               </div>
             </div>
           </div>
