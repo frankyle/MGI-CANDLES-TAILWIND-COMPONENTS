@@ -26,7 +26,7 @@ import { Link } from 'react-router-dom'
 
 const products = [
   { name: 'Weekly Analysis', description: 'Analyze market trends with our weekly setups.', href: 'weekly-analysis', icon: ChartPieIcon },
-  { name: 'Trading Signals', description: 'Receive signals to maximize your profits.', href: 'trade-signal', icon: CurrencyDollarIcon },
+  { name: 'Trading Reasons', description: 'Receive Reasons to used to take trades.', href: 'trade-signal', icon: CurrencyDollarIcon },
   { name: 'Risk Management', description: 'Learn to manage risk effectively.', href: 'risk', icon: ShieldExclamationIcon },
   { name: 'Beginners Training', description: 'Master Forex trading with beginner courses.', href: 'trade-tracker', icon: AcademicCapIcon },
   { name: 'Weekly Reports', description: 'Get weekly reports / Trade Tracker based on Weekly Setups.', href: 'trade-tracker', icon: ChartBarIcon },
@@ -130,9 +130,7 @@ export default function Example() {
           <Link to="/contact" className="text-sm/6 font-semibold text-gray-900">
             Contact Us
           </Link>
-          <Link to="/admin" className="text-sm/6 font-semibold text-gray-900">
-            Admin Dashboard
-          </Link>
+        
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/login" className="text-sm/6 font-semibold text-gray-900">
